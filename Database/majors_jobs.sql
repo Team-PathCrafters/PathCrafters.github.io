@@ -72,21 +72,7 @@ create table Answers (
         on update cascade
 );
 
-Create table Answer_Major_Link(
-	AnswerID int,
-	MajorID int,
-	primary key (AnswerID, MajorID),
-	foreign key (AnswerID) references Answers(AnswerID),
-	foreign key (MajorID) references Major(MajorID)
-);
 
-Create table Answer_Job_link(
-	AnswerID int,
-	JobID int,
-	primary key (AnswerID, JobID),
-	foreign key (AnswerID) references Answers(AnswerID),
-	foreign key (JobID) references Jobs(JobID)
-);
 -- add all current Majors 
 INSERT INTO Major (Major_name, CreditHrs, focus)
 VALUES
