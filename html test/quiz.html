@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Career Quiz</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img class="nav-logo" src="Images/LU-logo-standard.png" alt="Lindenwood University Logo">
+            </a>
+            <div class="fontBOLD">DISCOVER YOUR ROAR. FIND YOUR CAREER PATH OR MAJOR.</div>
+        </nav>
+    </header>
+    <main class="page" id="pageMain">
+        <section class="quiz-wrapper">
+            <div class="quiz-card" id="quizCard" role="region" aria-labelledby="quizTitle">
+                <header class="quiz-top">
+                    <h1 id="quizTitle">Find Your Medical Career</h1>
+
+                </header>
+
+                <div id="content" class="quiz-content" aria-live="polite">
+                    <div class="loading">Loading quiz…</div>
+                </div>
+
+                <footer class="quiz-controls">
+                    <button id="prevBtn" class="btn secondary" aria-label="Previous question" disabled>Previous</button>
+                    <div class="progress" id="progress" aria-hidden="true">0 / 0</div>
+                    <button id="nextBtn" class="btn primary" aria-label="Next question" disabled>Next</button>
+                </footer>
+            </div>
+        </section>
+    </main>
+
+    <script src="Scripts/quiz.js"></script>
+</body>
+</html>

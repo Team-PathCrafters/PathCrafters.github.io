@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>LU Med Pathfinder: Find Your Major</title>
+
+        <link rel="stylesheet" href="css/style1.css">
+    </head>
+
+    <body class="font">
+        <header>
+            <nav>
+                <a href="index.html">
+                    <img class="nav-logo" src="Images/LU-logo-standard.png" alt="Lindenwood University Logo">
+                </a>
+                <div class="fontBOLD">DISCOVER YOUR ROAR. FIND YOUR CAREER PATH OR MAJOR.</div>
+            </nav>
+        </header>
+
+        <main class="content">
+            <div id="autocomplete-root" class="search-container autocomplete">
+                <input id="careersearch" type="careersearch" autocomplete="off" aria-autocomplete="list" aria-controls="results" aria-haspopup="listbox" placeholder="Search for a career...">
+				<div id="results" role="listbox" class="listbox" hidden></div>
+                <button id="searchButton" class="search-button" onclick="">🔍</button> <!--Needs to search database-->
+				
+            </div>
+
+            <div class="cards-container"> <!--Need to make these work with the database-->
+                <div id="major1" class="card fontBOLD">
+                    <h3>Major 1</h3>
+                    <p>Years of schooling: X</p>
+                    <p>Cost estimate: $X</p>
+                </div>
+
+                <div id="major2" class="card fontBOLD">
+                    <h3>Major 2</h3>
+                    <p>Years of schooling: X</p>
+                    <p>Cost estimate: $X</p>
+                    <div class="separator"></div>
+                    <p>Years of grad schooling: X</p>
+                    <p>Cost estimate $X</p>
+                    <div class="separator"></div>
+                    <p>Years of residency training: X</p>
+                </div>
+
+                <div id="major3" class="card fontBOLD">
+                    <h3>Major 3</h3>
+                    <p>Years of schooling: X</p>
+                    <p>Cost estimate: $X</p>
+                </div>
+            </div>
+
+            <button class="button fontBOLD" onclick="">SEARCH AGAIN</button> <!--Needs to search database-->
+        </main>
+		<script src="Scripts/careersearch.js"></script>
+    </body>
+</html>
