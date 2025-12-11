@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Find Your Major - LU Med Reverse Advising</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style1.css">
+    </head>
+
+    <body class="font">
+        <header>
+            <nav>
+                <a href="index.html">
+                    <img class="nav-logo" src="Images/LU-logo-standard.png" alt="Lindenwood University Logo">
+                </a>
+                <div class="nav-tagline">DISCOVER YOUR ROAR.<br>FIND YOUR CAREER PATH OR MAJOR.</div>
+            </nav>
+        </header>
+
+        <main class="content">
+            <div id="autocomplete-root" class="search-container autocomplete">
+                <input id="careersearch" type="careersearch" autocomplete="off" aria-autocomplete="list" aria-controls="results" aria-haspopup="listbox" placeholder="Search for a career...">
+				<div id="results" role="listbox" class="listbox" hidden></div>
+                <button id="searchButton" class="search-button" onclick="">🔍</button> <!--Needs to search database-->
+				
+            </div>
+
+            <div class="cards-container"> <!--Need to make these work with the database-->
+                <div id="major1" class="card fontBOLD">
+                    
+                </div>
+
+                <div id="major2" class="card fontBOLD">
+                    
+              
+                    
+                </div>
+
+                <div id="major3" class="card fontBOLD">
+                    
+                </div>
+            </div>
+
+            <button class="button fontBOLD" onclick="">SEARCH AGAIN</button> <!--Needs to search database-->
+        </main>
+		<script src="Scripts/careersearch.js"></script>
+    </body>
+</html>
